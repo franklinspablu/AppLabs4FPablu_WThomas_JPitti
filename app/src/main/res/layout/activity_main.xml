@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="50px"
+        android:src="@drawable/arrow"
+        />
+
+
+
+    <TextView
+        android:id="@+id/lbldirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40px"
+        android:layout_marginRight="100dp"
+        android:layout_toRightOf="@id/arrow"
+        android:text="Direct"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        />
+
+    <SearchView
+        android:layout_marginTop="20dp"
+        android:id="@+id/svBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbldirect"
+        android:queryHint="Search"
+        />
+
+    <TextView
+        android:id="@+id/lblStaticMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/svBuscar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10px"
+        android:text="Messages"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblrequests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/svBuscar"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/lblStaticMessages"
+        android:text="1 request"
+        android:textColor="#87CEEB"/>
+
+    <ListView android:id="@+id/lstOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblStaticMessages"
+        />
+
+</RelativeLayout>

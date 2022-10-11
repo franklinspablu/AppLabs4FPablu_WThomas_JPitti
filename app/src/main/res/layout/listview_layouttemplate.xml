@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imvProfile"
+        android:text="user"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imvProfile"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/user"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/lbltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblUsername"
+        android:layout_toRightOf="@id/lblMessages"
+        android:layout_marginLeft="10dp"
+        android:text="53" />
+
+    <TextView
+        android:id="@+id/lbltimeago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblUsername"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/lbltime"
+        android:text=" min ago"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/lblMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblUsername"
+        android:layout_toRightOf="@+id/imvProfile"
+        android:layout_marginLeft="15dp"
+        android:text="text"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>
